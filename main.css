@@ -59,9 +59,9 @@ button{
     padding: 16px 50px;
     border: none;
     outline: none;
-    background: #edede9;
-    color: grey;
-    font-size: 16px;
+    background: #9bb1ff;
+    color: #f5efff;
+    font-size: 18px;
     cursor: pointer;
     border-radius: 40px;
 }
@@ -84,8 +84,8 @@ ul li::before{
     background-image: url(images/unchecked1.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
-    left: 8px;
+    top: 8px;
+    left: 6px;
 }
 
 ul li.checked{
@@ -103,8 +103,8 @@ ul li span{
     top: 5px;
     width: 40px;
     height: 40px;
-    font-size: 22px;
-    color: #555;
+    font-size: 25px;
+    color: #3f8efc;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
