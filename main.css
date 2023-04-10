@@ -34,8 +34,23 @@ html, body{
     font-size: 30px ;
 }
 
-.paragraph-styling{
-    margin: 0;
-    cursor: pointer;
-    font-size: 20px;
+#checkbox{
+    width: 15px;
+    height: 46px;
+    outline: none;
+    vertical-align: middle;
+
+}
+
+/* following code was inspired by https://thecodingpie.medium.com/how-to-build-a-todo-list-app-with-javascript-and-local-storage-a884f4ea3ec */
+
+
+/* getting rid of the bullet point on the side of the check box */
+ul{
+    list-style-type: none;
+}
+
+/* a line through the task after being checked */
+.checked{
+    text-decoration: line-through;
 }
