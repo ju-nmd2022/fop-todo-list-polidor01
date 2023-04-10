@@ -1,14 +1,14 @@
-let addToDoButton = document.getElementById("add");
-let listContainer = document.getElementById("list-container");
-let inputField = document.getElementById("inputField");
+const todoContainer = document.querySelector('.todo-container');
+const todoInput = document.querySelector('.inputField');
+const todoItemsList = document.querySelector('.todo-items');
+
+
+//storing all the items by creating an array//
+let todos = [];
 
 
 
-//how to make the text you type to stay on the screen
-addToDoButton.addEventListener('click', function(){
-   var paragraph = document.createElement('p')
-   paragraph.innerText = inputField.value;
-   listContainer.appendChild(paragraph);
-})
+
+
 
 
