@@ -3,7 +3,7 @@ const listContainer = document.getElementById("list-container");
 
 function addTask(){
     if(inputBox.value === ''){
-        alert("Write your task!");
+        alert("Write your task!"); //if you dont write in the text box and still press Add, it will inform you to write something
     }
     else{
         let li = document.createElement("li");
@@ -14,28 +14,28 @@ function addTask(){
         li.appendChild(span);
     }
     inputBox.value = "";
-    saveData()
+    saveInfo()
 }
 
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
-        saveData()
+        saveInfo()
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
-        saveData()
+        saveInfo()
     }
 }, false);
 
-function saveData(){
-    localStorage.setItem("data", listContainer.innerHTML);
+function saveInfo(){
+    localStorage.setItem("information", listContainer.innerHTML);
 }
 
-function showTask(){
-    listContainer.innerHTML = localStorage.getItem("data");
+function showList(){
+    listContainer.innerHTML = localStorage.getItem("information");
 }
-showTask();
+showList();
 
 
 // codes inspired by https://www.youtube.com/watch?v=G0jO8kUrg-I&t=546s

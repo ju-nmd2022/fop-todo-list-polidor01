@@ -47,7 +47,6 @@
 }
 
 input{
-    /* full width */
     flex: 1; 
     border: none;
     outline: none;
